@@ -1,0 +1,26 @@
+{
+  "name"	: "NuwaJs",
+  "description"	: "A nodeJs implementation of a html5 css3 and javascript site application builder",
+  "homepage"	: "",
+  "keywords"	: ["html5", "developpement"],
+  "author"	: "Steeve Vandecappelle <me@mizore.fr>",
+  "contributors": [
+		   { "name": ""}
+		  ],
+  "dependencies": {
+		   "express"	: "=3.1.0",
+		   "log4js"	: "=0.6.6",
+		   "uglify-js"	: "=1.2.5",
+		   "nodemailer" : "=0.3.0",
+		   "jade"	: "=0.35",
+		   "pg"		: ">=2.11.1",
+		   "socket.io"	: "=0.9.16"
+		  },
+   "bin"	: "./run.js",
+   "repository"	: {
+		   "type" 	: "git",
+		   "url"	: "http://mizore.fr/mizore/nuwaJs"
+		  },
+   "version"	: "0.0.1-alpha"
+}
+

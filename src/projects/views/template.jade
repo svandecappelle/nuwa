@@ -1,0 +1,60 @@
+extends ../../template.jade
+
+block scripts
+	script(type='text/JavaScript', src='public/lib/projects/onload.js')
+
+block content
+	main
+		.content
+			section
+				.simple-content
+					.large-screen
+						.head
+							h3 All projects your are looking for
+							p.light.description-block
+								| Your personal projects.
+						hr
+						div.form-horizontal
+							.row
+							.span7
+								each project in projects
+									.control-group
+										label= project.name
+										.controls
+											a(href='/project/'+username+'/'+project.name) View project
+											
+											span.help-block Enter your name, so people you know can recognize you.
+								
+								each snippet in snippets
+									.control-group
+										label= snippet.name
+										.controls
+											a(href='/snippet/'+username+'/'+snippet.name) View snippet
+											
+											span.help-block Enter your name, so people you know can recognize you.
+
+							.form-actions
+								input(type="button",value="New Project", id="create").btn btn-save
+
+		.popup-content
+			#newproject
+				div.white-popup
+					i.mfp-close.fa.fa-times
+					form#createproj
+						.control-group
+							label.control-label Name
+							.controls
+								input.input-xlarge(type="text", placeholder="Project name", name="name")							
+								span.help-block Enter a project name.
+						.control-group
+							label.control-label Allow public access
+							.controls
+								input(type="checkbox", name="public")
+								span.help-block Does the project can be accessed by everyone.
+						.control-group
+							label.control-label Simple project pattern
+							.controls
+								input(type="checkbox", name="snippet")
+								span.help-block Does the project is a simple html/css/javascript project.
+						.form-actions
+								input(type="submit",value="Create", id="create").btn btn-save

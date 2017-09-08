@@ -1,0 +1,6 @@
+head
+	style(type='text/css')!= code_css
+body!= code_html
+	script(type='text/javascript')!= code_js
+	each externalScripts in scripts
+		script(type='text/javascript', src=''+externalScripts)

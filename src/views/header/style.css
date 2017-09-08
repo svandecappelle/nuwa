@@ -1,0 +1,244 @@
+header{
+    color: white;
+    min-height: 50px;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 6;
+    background: none repeat scroll 0 0 #373737;
+    border-bottom: 1px solid #272727;
+    text-align: center;
+}
+
+header a{
+    cursor: pointer;
+}
+
+header a:hover{
+    color: #cacaca;
+}
+
+header .header{
+    margin: auto;
+    width: 50%;
+    position: relative;
+}
+
+header .project_name {
+    color: #FFFFFF;
+    text-shadow: 0 1px 1px #444444;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0 0 0 5px;
+    position: relative;
+}
+
+header .app_logo {
+    margin-right: 9px;
+    padding-top: 5px;
+}
+
+header .app_logo .separator {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+header .separator {
+    background: none repeat scroll 0 0 #272727;
+    border-left: 1px solid #474747;
+    float: left;
+    height: 46px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -3px;
+    width: 1px;
+}
+
+header .action-bar{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+header .action-bar ul{
+    list-style: none outside none;
+    float: left;
+    display: inline-block;
+}
+
+header .app_logo a h1 {
+    background: url("logo-black.png") no-repeat scroll center 1px 38px auto rgba(0, 0, 0, 0);
+    color: #474D57;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    text-indent: -9999px;
+    text-shadow: 0 1px 1px #FFFFFF;
+    width: 40px;
+}
+
+header nav {
+    color: #777777;
+    background-image: url("../../img/greysnow.png");
+    border-bottom: 1px solid #E1E1E1;
+    border-right: 1px solid #000000;
+    box-shadow: 0 3px 8px 1px #C0C0C0;
+    margin-top: 42px;
+    overflow: hidden;
+    padding-top: 0;
+    position: fixed;
+    top: 10px;
+    white-space: nowrap;
+    width: 100%;
+    background: #f5f5f5;
+    padding-top: 4px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none outside none;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    height: 38px;
+    line-height: 34px;
+    color: #777;
+    text-shadow: 0 1px 1px white;
+    padding: 0 10px;
+    text-decoration: none;
+    padding-top: 2px;
+}
+
+
+
+nav ul li a.active:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #777777;
+    border-style: solid;
+    border-width: 6px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0;
+    left: 32%;
+    margin-left: -2px;
+    position: relative;
+    width: 0;
+}
+
+nav ul li a:after {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    padding-bottom: 0px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0;
+    left: 32%;
+    margin-left: -2px;
+    position: relative;
+    width: 0;
+}
+
+nav ul li a:hover:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #777777;
+    border-style: solid;
+    border-width: 6px;
+    padding-bottom: 0px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 0;
+    left: 32%;
+    margin-left: -2px;
+    position: relative;
+    width: 0;
+}
+
+nav ul li a{
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+header .search{
+    display: inline-block;
+    float: left;
+    margin: 9px;
+}
+
+header .search .search-input {
+    width: 270px;
+    height: 28px;
+    margin-top: 3px;
+}
+
+header .search input.search-input:focus{
+    width: 356px;
+}
+
+header .search .search-input:focus, .ui_color header .search .search-input:focus {
+    background-color: white;
+}
+
+header .search .search-input {
+    background-image: url("/public/images/icon-search.png");
+    background-color: rgba(255,255,255,0.5);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 25px;
+    font-size: 13px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #AAA;
+    box-shadow: none;
+    -webkit-transition: all 0.15s ease-in 0s;
+    -moz-transition: all 0.15s ease-in 0s;
+    -ms-transition: all 0.15s ease-in 0s;
+    -o-transition: all 0.15s ease-in 0s;
+    transition: all 0.15s ease-in 0s;
+    display: inline-block;
+    float: left;
+
+}
+
+header a {
+    outline: none;
+    color: #ccc;
+}
+
+header .action-bar a:hover {
+    font-style: normal;
+    color: white;
+}
+
+header input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #636363;
+}
+header input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #636363;
+}

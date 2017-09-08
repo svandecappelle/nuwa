@@ -1,0 +1,8 @@
+#uninstall
+DROP TABLE usr CASCADE;
+DROP TABLE file CASCADE;
+DROP TABLE projects CASCADE;
+DROP TABLE options_file CASCADE;
+DROP TABLE options_snippet CASCADE;
+DROP TABLE snippet CASCADE;
+DROP TABLE project_files CASCADE;

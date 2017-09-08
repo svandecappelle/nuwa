@@ -1,0 +1,28 @@
+head
+	include style.css
+
+header
+	.header
+		.app_logo
+			a.home(href="/")
+				h1 NuwaJS
+			.separator
+		h1.project_name NuwaJS
+		.action-bar
+			.search
+				form
+					input.search-input.ui-autocomplete-input(type="text",placeholder="Search")
+			ul
+				li
+					a(title='User', href="/me")
+						i.fa.fa-user
+	nav
+		ul
+			li 
+				a(title="home")
+					i.fa.fa-home
+			li 
+				a(title="saved snippet", href="/projects")
+					i.fa.fa-file-text
+			li
+				a Item

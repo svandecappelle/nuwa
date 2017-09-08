@@ -1,0 +1,24 @@
+doctype html 5
+
+html
+	head
+		script(type='text/JavaScript', src="/socket.io/socket.io.js")
+		include head/template.jade
+		include views/style.css
+		include ../public/font/css/font-awesome.css
+		include ../public/dependencies/magnific-popup/magnific-popup.css
+		
+		script(type='text/JavaScript', src='/public/dependencies/jquery-1.10.2/jquery.js')
+		script(type='text/JavaScript', src='/public/dependencies/magnific-popup/jquery.magnific-popup.min.js')
+
+		script(type='text/javascript', src='/public/lib/codetools.js')
+
+		block scripts
+
+	body
+		include views/header/header.jade
+		block content
+		#messages
+			.text
+		block foot
+			include views/footer/template.jade

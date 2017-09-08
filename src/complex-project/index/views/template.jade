@@ -1,0 +1,46 @@
+extends /template.jade
+
+block scripts
+	script(type='text/JavaScript', src='/public/dependencies/codemirror-3.21/lib/codemirror.js')
+
+	link(rel='stylesheet', href='/public/dependencies/codemirror-3.21/addon/dialog/dialog.css')
+	link(rel='stylesheet', href='/public/dependencies/codemirror-3.21/addon/hint/show-hint.css')
+	link(rel='stylesheet', href='/public/dependencies/codemirror-3.21/addon/tern/tern.css')
+	link(rel='stylesheet', href='/public/dependencies/codemirror-3.21/addon/display/fullscreen.css')
+	link(rel='stylesheet', href='/public/dependencies/codemirror-3.21/lib/codemirror.css')
+	link(rel='stylesheet', href='/public/dependencies/codemirror-3.21/theme/twilight.css')
+
+	script(type='text/javascript', src='/public/dependencies/acorn/acorn.js')
+	script(type='text/javascript', src='/public/dependencies/acorn/acorn_loose.js')
+	script(type='text/javascript', src='/public/dependencies/acorn/utils/walk.js')
+
+	script(type='text/javascript', src='/public/dependencies/codemirror-3.21/addon/dialog/dialog.js')
+	script(type='text/javascript', src='/public/dependencies/codemirror-3.21/addon/hint/show-hint.js')
+	script(type='text/javascript', src='/public/dependencies/codemirror-3.21/addon/hint/css-hint.js')
+	script(type='text/javascript', src='/public/dependencies/codemirror-3.21/addon/hint/xml-hint.js')
+	script(type='text/javascript', src='/public/dependencies/codemirror-3.21/addon/hint/html-hint.js')
+	script(type='text/javascript', src='/public/dependencies/codemirror-3.21/addon/tern/tern.js')
+	script(type='text/javascript', src='/public/dependencies/codemirror-3.21/addon/display/fullscreen.js')
+	
+	script(type='text/JavaScript', src='/public/dependencies/codemirror-3.21/mode/javascript/javascript.js')
+
+	script(type='text/JavaScript', src='/public/dependencies/codemirror-3.21/addon/edit/closebrackets.js')
+	script(type='text/JavaScript', src='/public/dependencies/codemirror-3.21/addon/edit/closetag.js')
+	script(type='text/JavaScript', src='/public/dependencies/codemirror-3.21/addon/edit/matchbrackets.js')
+	script(type='text/JavaScript', src='/public/dependencies/codemirror-3.21/addon/edit/trailingspace.js')
+	script(type='text/JavaScript', src='/public/dependencies/codemirror-3.21/addon/mode/loadmode.js')
+
+	script(type='text/javascript', src='/public/dependencies/ternjs/doc/demo/polyfill.js')
+	script(type='text/javascript', src='/public/dependencies/ternjs/lib/signal.js')
+	script(type='text/javascript', src='/public/dependencies/ternjs/lib/tern.js')
+	script(type='text/javascript', src='/public/dependencies/ternjs/lib/def.js')
+	script(type='text/javascript', src='/public/dependencies/ternjs/lib/comment.js')
+	script(type='text/javascript', src='/public/dependencies/ternjs/lib/infer.js')
+	script(type='text/javascript', src='/public/dependencies/ternjs/plugin/doc_comment.js')
+
+block content
+	main
+		.content
+			section
+				aside
+					

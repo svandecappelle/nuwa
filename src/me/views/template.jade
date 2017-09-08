@@ -1,0 +1,58 @@
+extends ../../template.jade
+
+block content
+	main
+		.content
+			section
+				.simple-content
+					.large-screen
+						.head
+							h3 Profile settings
+							p.light.description-block
+								| This information appears on your profile.
+						hr
+						form.edit_user.form-horizontal
+							.row
+							.span7
+								.control-group
+									label Name
+									.controls
+										input(type='text',value=username).input-xlarge
+										span.help-block Enter your name, so people you know can recognize you.
+								.control-group
+									label Name
+									.controls
+										input(type='text',value=name).input-xlarge
+										span.help-block
+								.control-group
+									label Firstname
+									.controls
+										input(type='text',value=firstname).input-xlarge
+										span.help-block
+								.control-group
+									label Email
+									.controls
+										input(type='text', value=email).input-xlarge
+										span.help-block Mail address
+								.control-group
+									label Bio
+									.controls
+										textarea().input-xlarge
+										span.help-block Discribe yourself
+
+							.span5.pull-right
+								.light-well
+									img.avatar.s160
+									.clearfix
+										.profile-avatar-form-option
+											p.light
+												| You can upload an avatar here
+												| or change it at 
+												a(href='http://gravatar.com') gravatar.com
+											hr
+											a.choose-btn.btn.btn-small.js-choose-user-avatar-button
+												i.icon-paper-clip
+													span.file_name.js-avatar-filename Choose File ...
+											span.help-block The maximum file size allowed is 200KB.							
+							.form-actions
+								input(type="submit",value="Save profile").btn btn-save
